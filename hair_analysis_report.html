@@ -1,202 +1,402 @@
 
-    <html>
-    <head>
-        <title>Hair Analysis Report</title>
-        <style>
-            body {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: 40px;
-                background-color: #f9f9f9;
-                color: #333;
-            }
-            h1 {
-                color: #5A189A;
-                border-bottom: 2px solid #5A189A;
-            }
-            h2 {
-                color: #0077b6;
-                margin-top: 30px;
-            }
-            .section {
-                background-color: #ffffff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-                margin-bottom: 30px;
-            }
-            ul {
-                padding-left: 20px;
-            }
-            li {
-                margin-bottom: 10px;
-            }
-            p {
-                margin: 10px 0;
-                line-height: 1.6;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Hair Analysis Report</h1>
-
-        <div class="section">
-            <h2>Analysis Results</h2>
-            <p>Okay, I will perform a comprehensive analysis of the four images you provided, focusing on hair characteristics, health, scalp condition, and damage patterns.</p>
-<p><strong>Overall Assessment Based on All Images</strong></p>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Hair Analysis Report - Arunkumar R</title>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    color: #333;
+                    line-height: 1.6;
+                }
+                .page {
+                    width: 21cm;
+                    min-height: 29.7cm;
+                    margin: 1cm auto;
+                    padding: 1.5cm;
+                    box-sizing: border-box;
+                    background: white;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+                .letterhead {
+                    border-bottom: 3px double #5A189A;
+                    padding-bottom: 15px;
+                    margin-bottom: 25px;
+                    text-align: center;
+                }
+                .hospital-name {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #5A189A;
+                    margin-bottom: 5px;
+                }
+                .contact-info {
+                    font-size: 12px;
+                    color: #666;
+                }
+                .report-header {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 25px 0;
+                }
+                .patient-info, .report-info {
+                    width: 48%;
+                }
+                .info-box {
+                    border: 1px solid #ddd;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                }
+                .info-box h3 {
+                    margin-top: 0;
+                    color: #5A189A;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 5px;
+                }
+                .info-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                }
+                .info-item {
+                    margin-bottom: 8px;
+                }
+                .info-label {
+                    font-weight: bold;
+                    color: #555;
+                }
+                .section {
+                    margin: 30px 0;
+                }
+                .section-title {
+                    background-color: #5A189A;
+                    color: white;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+                ul {
+                    padding-left: 25px;
+                }
+                li {
+                    margin-bottom: 8px;
+                }
+                .signature-area {
+                    margin-top: 50px;
+                    text-align: right;
+                }
+                .signature-line {
+                    display: inline-block;
+                    border-top: 1px solid #333;
+                    width: 250px;
+                    margin-top: 40px;
+                    padding-top: 5px;
+                    text-align: center;
+                }
+                .footer {
+                    margin-top: 50px;
+                    font-size: 11px;
+                    color: #777;
+                    text-align: center;
+                    border-top: 1px solid #eee;
+                    padding-top: 10px;
+                }
+                .report-id {
+                    background-color: #f0f0f0;
+                    padding: 3px 8px;
+                    border-radius: 3px;
+                    font-family: monospace;
+                    font-size: 14px;
+                }
+                @media print {
+                    body {
+                        background: none;
+                    }
+                    .page {
+                        width: auto;
+                        margin: 0;
+                        padding: 2cm;
+                        box-shadow: none;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="page">
+                <div class="letterhead">
+                    <div class="hospital-name">Kavery</div>
+                    <div class="contact-info">
+                        123 Dermatology Street, Medical City | Tel: (123) 456-7890 | Email: contact@hairclinic.com
+                    </div>
+                </div>
+                
+                <div class="report-header">
+                    <div class="info-box patient-info">
+                        <h3>Patient Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span> Arunkumar R
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Patient ID:</span> 123
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Date of Birth:</span> 1997-02-14
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Age:</span> 28
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Gender:</span> Male
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Doctor:</span> Srivasan
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box report-info">
+                        <h3>Report Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Report ID:</span> <span class="report-id">HA3520-20250412</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Analysis Date:</span> 2025-04-12
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Report Generated:</span> 2025-04-12 19:42:06
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">HAIR ANALYSIS FINDINGS</div>
+                    <p>Okay, I'm ready to analyze these images as a senior hair specialist. Here is a comprehensive analysis based on the images you provided:</p>
+<p><strong>Overall Impression (Before Individual Analysis):</strong></p>
+<p>Before diving into the details, the patient appears to have hair that is generally in good condition, with no immediately obvious signs of severe damage or scalp issues. However, a more thorough examination is needed to confirm this initial impression and identify any underlying problems.</p>
+<p><strong>1. Individual Image Analyses:</strong></p>
 <ul>
-<li>  <strong>Hair Type/Texture:</strong> The hair appears to be medium in texture, with a slight wave or curl pattern. It doesn't seem to be tightly coiled or stick-straight. There is some frizz, indicating the hair may be prone to dryness or requires more moisture.</li>
-<li>  <strong>Overall Hair Health:</strong> The hair looks generally healthy with good shine, although there are some signs of dryness (frizz).</li>
-<li>  <strong>Scalp Condition Visibility:</strong> The scalp is not clearly visible in any of the images, which makes it difficult to assess its condition.</li>
-<li>  <strong>Damage Patterns:</strong> There are no immediately obvious signs of significant damage like split ends or breakage, though frizziness could indicate some level of damage or dryness.</li>
+<li>  <strong>front.jpg:</strong></li>
+<li>  The hair appears to be a medium to dark brown color with some lighter highlights, possibly natural sun-kissing or a subtle dye job.</li>
+<li>  The hair has a slight wave, giving it some volume and texture.</li>
+<li>  The hairline is fairly straight and even across the forehead.</li>
+<li>  There are no obvious signs of thinning or bald spots in the frontal area.</li>
+<li>  The overall density appears to be medium to high.</li>
 </ul>
-<p><strong>Confidence Levels</strong></p>
 <ul>
-<li>  Hair Type/Texture: Medium texture with slight wave/curl (Confidence: 80%)</li>
-<li>  Overall Hair Health: Generally healthy with some dryness (Confidence: 70%)</li>
-<li>  Scalp Condition Visibility: Cannot be determined with provided images (Confidence: 10%)</li>
-<li>  Damage Patterns: Minimal obvious damage, but frizz suggests dryness (Confidence: 60%)</li>
-</ul>
-<p><strong>Individual Image Analysis</strong></p>
-<p><strong>1.  front.jpg:</strong></p>
-<ul>
-<li>  Hair appears to be evenly distributed.</li>
-<li>  No significant scalp visibility.</li>
-<li>  Slight frizziness around the face.</li>
-<li>  Good overall shine.</li>
-</ul>
-<p><strong>2.  side\_1.jpg:</strong></p>
-<ul>
-<li>  The wave pattern is more visible from this angle.</li>
-<li>  No clear signs of damage.</li>
-<li>  Scalp is not visible.</li>
-</ul>
-<p><strong>3.  side\_2.jpg:</strong></p>
-<ul>
-<li>  Similar to side\_1.jpg, showing the wave pattern and lack of visible scalp.</li>
-<li>  Consistent hair color.</li>
-</ul>
-<p><strong>4.  top.jpg:</strong></p>
-<ul>
-<li>  Shows the hair's density on top of the head.</li>
-<li>  No visible scalp issues.</li>
-<li>  Some frizz is noticeable.</li>
-</ul>
-<p><strong>Discrepancies and Possible Reasons</strong></p>
-<ul>
-<li>  <strong>Lighting Differences:</strong> The images have varying lighting conditions, which can affect the perceived color and shine of the hair.</li>
-<li>  <strong>Angle Variations:</strong> Different angles emphasize different aspects of the hair's texture and volume.</li>
-</ul>
-<p><strong>Suggestions for Ideal Image Angles</strong></p>
-<p>To get a more accurate and comprehensive assessment, additional images focusing on the following would be helpful:</p>
-<ul>
-<li>  <strong>Close-up of Hair Strands:</strong> A close-up shot of individual hair strands to better determine the degree of damage (split ends, etc.)</li>
-<li>  <strong>Scalp Close-up:</strong> A close-up image of the scalp, ideally with the hair slightly parted, to assess scalp health (dryness, redness, flaking).</li>
-<li>  <strong>Image with a Flash:</strong> An image taken with direct flash to highlight the hair's shine and texture.</li>
-<li>  <strong>Back of the Head:</strong> An image from the back of the head to see the hair's overall length and style.</li>
-</ul>
-<p>Let me know if you have any other questions or would like me to elaborate on any of these points!</p>
-        </div>
-
-        <div class="section">
-            <h2>Recommendations</h2>
-            <p>Okay, based on the comprehensive hair analysis and considering the identified characteristics and potential issues, here are detailed recommendations for improving hair health and appearance, organized by priority:</p>
-<p><strong>PRIORITY 1: Addressing Dryness and Frizz</strong></p>
-<ul>
-<li>  <strong>Daily Care Routine:</strong></li>
-<li>  <strong>Shampoo:</strong> Switch to a moisturizing, sulfate-free shampoo. Sulfates can strip the hair of its natural oils, exacerbating dryness. Look for ingredients like argan oil, shea butter, or coconut oil. <strong>Frequency:</strong> Shampoo 2-3 times per week, not daily, to avoid over-drying.</li>
-<li>  <strong>Conditioner:</strong> Use a rich, moisturizing conditioner every time you shampoo. Focus on applying it to the mid-lengths and ends, where hair tends to be driest.</li>
-<li>  <strong>Brushing:</strong> Use a wide-tooth comb or a brush with soft, flexible bristles, especially when hair is wet. Start detangling from the ends and work your way up to minimize breakage.</li>
+<li>  <strong>side\_1.jpg:</strong></li>
+<li>  The side profile reveals the hair's layering and how it falls.</li>
+<li>  The hair has a natural wave pattern.</li>
+<li>  The scalp seems healthy and without dandruff.</li>
+<li>  Hair density looks good in the side view.</li>
+<li>  There are no apparent split ends or damage along the length.</li>
 </ul>
 <ul>
-<li>  <strong>Weekly Treatments:</strong></li>
-<li>  <strong>Deep Conditioning Mask:</strong> Incorporate a deep conditioning mask into your routine once a week. Look for masks with ingredients like honey, avocado oil, or aloe vera. Apply to damp hair, leave on for 15-30 minutes (or as directed), and rinse thoroughly.</li>
+<li>  <strong>side\_2.jpg:</strong></li>
+<li>  Similar to side\_1.jpg, this image confirms the hair's layering and wave pattern from the opposite side.</li>
+<li>  The scalp health is consistent with the other side.</li>
+<li>  Length of the hair is visible, appearing to be medium to long.</li>
 </ul>
 <ul>
+<li>  <strong>top.jpg:</strong></li>
+<li>  This overhead view provides the best perspective on hair density and distribution across the scalp.</li>
+<li>  The hair appears evenly distributed with no significant thinning areas.</li>
+<li>  The natural wave pattern is more evident in this view.</li>
+<li>  Scalp color appears normal, indicating good health.</li>
+</ul>
+<p><strong>2. Comparative Analysis:</strong></p>
+<ul>
+<li>  <strong>Consistent Characteristics:</strong> The hair color, wave pattern, layering, and general good condition remain consistent across all four images. This suggests that these are inherent properties of the hair.</li>
+<li>  <strong>Resolving Discrepancies:</strong> There are no major discrepancies between the images. The slight variations in lighting and angle provide slightly different perspectives but do not contradict each other.</li>
+<li>  <strong>Most Accurate Overall Assessment:</strong> Considering all images, the most accurate overall assessment is that the patient has medium to dark brown hair with a natural wave, medium to high density, and good scalp health.</li>
+</ul>
+<p><strong>3. Detailed Assessment:</strong></p>
+<ul>
+<li>  <strong>Hair Type and Texture:</strong></li>
+<li>  Based on the images, the hair type is likely Type 2 (wavy).</li>
+<li>  The texture appears to be medium, as the individual strands are neither very fine nor very coarse.</li>
+<li>  The hair is not tightly curled but has a gentle, flowing wave pattern.</li>
+<li>  <strong>Scalp Health:</strong></li>
+<li>  The scalp appears healthy in the visible areas, with no signs of redness, flaking, or irritation.</li>
+<li>  The scalp color is normal.</li>
+<li>  <strong>Hair Density and Distribution:</strong></li>
+<li>  Hair density is medium to high, meaning there is a good amount of hair per square inch on the scalp.</li>
+<li>  Hair distribution appears even across the scalp, with no obvious balding or thinning spots.</li>
+<li>  <strong>Damage Patterns and Severity:</strong></li>
+<li>  There are no clear signs of significant damage, such as excessive split ends, breakage, or dryness.</li>
+<li>  The hair appears to be well-maintained and healthy.</li>
+<li>  <strong>Growth Patterns and Hairline:</strong></li>
+<li>  Hair growth seems normal and healthy.</li>
+<li>  The hairline appears to be intact and even across the forehead, with no signs of receding or thinning.</li>
+</ul>
+<p><strong>4. Final Evaluation:</strong></p>
+<ul>
+<li>  <strong>Most Likely Hair Characteristics:</strong></li>
+<li>  Hair Type: Type 2 (Wavy)</li>
+<li>  Hair Texture: Medium</li>
+<li>  Hair Color: Medium to Dark Brown with subtle highlights</li>
+<li>  Scalp Health: Healthy</li>
+<li>  Hair Density: Medium to High</li>
+<li>  Damage: Minimal to None</li>
+<li>  <strong>Confidence Levels:</strong></li>
+<li>  I am fairly confident in my assessment of hair type, texture, color, and scalp health based on the images provided.</li>
+<li>  Confidence in assessing damage patterns is high, as there are minimal signs of damage.</li>
+<li>  Confidence in assessing growth patterns and hairline is moderate, as these are best evaluated in person or with more specific images.</li>
+<li>  <strong>Recommended Additional Views:</strong></li>
+<li>  Close-up images of individual hair strands to better assess texture and damage.</li>
+<li>  A view of the back of the head to assess hair distribution and any potential issues in that area.</li>
+<li>  A pull test to evaluate hair strength and breakage.</li>
+</ul>
+<p>Let me know if you would like me to elaborate on any of these points or have additional information to provide!</p>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">TREATMENT PLAN & RECOMMENDATIONS</div>
+                    <p>Okay, based on the comprehensive hair analysis you provided, here's a detailed treatment plan, organized by priority and including rationales for each recommendation:</p>
+<p><strong>Treatment Plan for Type 2 (Wavy), Medium Texture, Medium to Dark Brown Hair with Subtle Highlights, Healthy Scalp, and Minimal Damage</strong></p>
+<p><strong>I. Immediate Care Recommendations (Focus: Gentle Hydration and Maintenance)</strong></p>
+<ul>
+<li>  <strong>Priority:</strong> High - Establishes a healthy baseline and prevents future damage.</li>
+<li>  <strong>Rationale:</strong> Prioritizes gentle care to maintain the hair's current healthy state and addresses the potential for dryness that can sometimes accompany wavy hair.</li>
+</ul>
+<ul>
+<li>  <strong>Daily Routine:</strong></li>
+<li>  <strong>Cleansing (2-3 times per week):</strong> Use a sulfate-free shampoo.</li>
+<li>  *Rationale:* Sulfates can strip the hair of its natural oils, leading to dryness and frizz, which are common concerns for wavy hair.</li>
+<li>  <strong>Conditioning (Every Wash):</strong> Apply a moisturizing conditioner, focusing on the mid-lengths and ends.</li>
+<li>  *Rationale:* Wavy hair tends to be drier at the ends, so conditioning helps replenish moisture and prevent breakage.</li>
+<li>  <strong>Leave-In Conditioner (Optional, After Washing):</strong> A lightweight leave-in conditioner can provide extra moisture and help define waves.</li>
+<li>  *Rationale:* Adds another layer of protection and hydration, especially helpful if the hair is prone to frizz.</li>
+<li>  <strong>Scrunching (After Washing, While Wet):</strong> Gently scrunch the hair upwards with your hands to encourage wave formation.</li>
+<li>  *Rationale:* Helps define the natural wave pattern and minimize frizz.</li>
+<li>  <strong>Air Drying or Diffusing (Preferred):</strong> Allow the hair to air dry or use a diffuser attachment on a low-heat setting.</li>
+<li>  *Rationale:* Heat styling can damage the hair and disrupt the natural wave pattern. Air drying or diffusing minimizes heat exposure.</li>
+<li>  <strong>Recommended Products:</strong></li>
+<li>  <strong>Sulfate-Free Shampoo:</strong> Shea Moisture Curl & Shine Shampoo, Ouai Fine Hair Shampoo.</li>
+<li>  <strong>Moisturizing Conditioner:</strong> Maui Moisture Curl Quench + Coconut Oil Conditioner, Briogeo Don't Despair, Repair! Deep Conditioning Mask (used as a regular conditioner).</li>
+<li>  <strong>Lightweight Leave-In Conditioner:</strong> Kinky-Curly Knot Today Leave-In Conditioner/Detangler, Pattern Leave-In Conditioner.</li>
+<li>  <strong>Handling Instructions:</strong></li>
+<li>  <strong>Detangling:</strong> Gently detangle hair with a wide-tooth comb, starting from the ends and working your way up to the roots.</li>
+<li>  *Rationale:* Prevents breakage and minimizes frizz.</li>
+<li>  <strong>Towel Drying:</strong> Avoid rubbing hair vigorously with a towel. Instead, gently squeeze out excess water or use a microfiber towel to blot the hair.</li>
+<li>  *Rationale:* Reduces frizz and prevents damage to the hair cuticle.</li>
+<li>  <strong>Sleeping:</strong> Sleep on a silk or satin pillowcase or use a silk or satin scarf to protect hair from friction.</li>
+<li>  *Rationale:* Reduces frizz and breakage while sleeping.</li>
+</ul>
+<p><strong>II. Professional Treatments (Focus: Enhancing Waves and Maintaining Health)</strong></p>
+<ul>
+<li>  <strong>Priority:</strong> Medium - Enhances the hair's natural beauty and addresses specific needs.</li>
+<li>  <strong>Rationale:</strong> These treatments can provide benefits that are difficult to achieve at home, such as deep hydration or enhanced wave definition.</li>
+</ul>
+<ul>
+<li>  <strong>Recommended Salon Treatments:</strong></li>
+<li>  <strong>Deep Conditioning Treatment (Every 4-6 Weeks):</strong> A professional deep conditioning treatment can provide intense hydration and repair damaged hair.</li>
+<li>  *Rationale:* Helps to maintain moisture balance and prevent breakage.</li>
+<li>  <strong>Hair Gloss or Glaze (As Needed):</strong> A hair gloss or glaze can add shine and vibrancy to the hair color.</li>
+<li>  *Rationale:* Enhances the color and overall appearance of the hair.</li>
+<li>  <strong>Wave-Enhancing Haircut (Every 8-12 Weeks):</strong> A haircut designed to enhance the natural wave pattern can improve the hair's shape and volume.</li>
+<li>  *Rationale:* Proper layering and shaping can help define waves and reduce bulkiness.</li>
+<li>  <strong>Frequency:</strong></li>
+<li>  Deep Conditioning Treatment: Every 4-6 weeks</li>
+<li>  Hair Gloss or Glaze: As needed (depending on color fade)</li>
+<li>  Wave-Enhancing Haircut: Every 8-12 weeks</li>
+<li>  <strong>Expected Outcomes:</strong></li>
+<li>  Improved hair hydration and manageability</li>
+<li>  Enhanced wave definition and volume</li>
+<li>  Increased shine and vibrancy</li>
+<li>  Reduced frizz and breakage</li>
+</ul>
+<p><strong>III. Long-Term Maintenance (Focus: Sustainable Hair Health and Beauty)</strong></p>
+<ul>
+<li>  <strong>Priority:</strong> High - Ensures long-lasting results and prevents future problems.</li>
+<li>  <strong>Rationale:</strong> These ongoing practices contribute to the overall health and appearance of the hair over time.</li>
+</ul>
+<ul>
+<li>  <strong>Ongoing Care Regimen:</strong></li>
+<li>  Continue with the recommended daily routine.</li>
+<li>  Use a clarifying shampoo every 2-4 weeks to remove product buildup.</li>
+<li>  *Rationale:* Product buildup can weigh down the hair and make it look dull.</li>
+<li>  Protect hair from sun exposure by wearing a hat or using a UV protectant spray.</li>
+<li>  *Rationale:* Sun exposure can damage the hair cuticle and fade hair color.</li>
 <li>  <strong>Lifestyle Adjustments:</strong></li>
-<li>  <strong>Hydration:</strong> Ensure adequate water intake throughout the day, as hydration impacts overall hair health.</li>
-<li>  <strong>Diet:</strong> Consume a balanced diet rich in essential fatty acids (omega-3 and omega-6), vitamins, and minerals. These nutrients are crucial for healthy hair growth and strength.</li>
+<li>  Minimize heat styling: Limit the use of heat styling tools, such as curling irons and flat irons.</li>
+<li>  *Rationale:* Excessive heat can damage the hair cuticle and disrupt the natural wave pattern.</li>
+<li>  Avoid tight hairstyles: Avoid wearing tight hairstyles, such as braids and ponytails, for extended periods of time.</li>
+<li>  *Rationale:* Tight hairstyles can cause breakage and hair loss.</li>
+<li>  Use a wide-tooth comb or a pick to detangle hair.</li>
+<li>  *Rationale:* Reduces breakage and frizz.</li>
+<li>  <strong>Nutritional Recommendations:</strong></li>
+<li>  Eat a balanced diet rich in vitamins and minerals.</li>
+<li>  *Rationale:* Good nutrition is essential for healthy hair growth and overall hair health.</li>
+<li>  Stay hydrated by drinking plenty of water.</li>
+<li>  *Rationale:* Hydration is important for maintaining moisture balance in the hair.</li>
+</ul>
+<p><strong>IV. Follow-up Plan (Focus: Monitoring Progress and Addressing Concerns)</strong></p>
+<ul>
+<li>  <strong>Priority:</strong> Low to Medium - Ensures that the treatment plan is effective and any potential issues are addressed promptly.</li>
+<li>  <strong>Rationale:</strong> Regular monitoring allows for adjustments to the treatment plan as needed and helps prevent minor problems from becoming major issues.</li>
 </ul>
 <ul>
-<li>  <strong>Product Recommendations (for Dryness/Frizz):</strong></li>
-<li>  <strong>Shampoo:</strong>  Shea Moisture Coconut & Hibiscus Curl & Shine Shampoo (sulfate-free)</li>
-<li>  <strong>Conditioner:</strong>  OGX Argan Oil of Morocco Conditioner</li>
-<li>  <strong>Deep Conditioner:</strong>  Briogeo Don't Despair, Repair! Deep Conditioning Mask</li>
+<li>  <strong>Recommended Timeline for Reassessment:</strong></li>
+<li>  Reassess hair condition and treatment plan every 3-6 months.</li>
+<li>  Adjust the treatment plan as needed based on changes in hair condition, lifestyle, and environmental factors.</li>
+<li>  <strong>Signs to Watch For:</strong></li>
+<li>  Increased dryness or frizz</li>
+<li>  Excessive breakage or split ends</li>
+<li>  Scalp irritation or flaking</li>
+<li>  Changes in hair density or growth</li>
+<li>  <strong>When to Seek Professional Help:</strong></li>
+<li>  If you experience any significant changes in hair condition or scalp health</li>
+<li>  If you are concerned about hair loss or thinning</li>
+<li>  If you are unable to manage your hair effectively at home</li>
+</ul>
+<p><strong>V. Product Recommendations (Focus: Supporting Hair Health and Enhancing Waves)</strong></p>
+<ul>
+<li>  <strong>Priority:</strong> High - Using the right products is crucial for maintaining healthy and beautiful wavy hair.</li>
+<li>  <strong>Rationale:</strong> Specific product types and ingredients can help address the unique needs of wavy hair, such as hydration, frizz control, and wave definition.</li>
 </ul>
 <ul>
-<li>  <strong>Timeline for Expected Improvements:</strong></li>
-<li>  You should start noticing a decrease in frizz and improved manageability within 2-4 weeks of consistently following the new routine. Significant improvements in overall hair health may take 2-3 months.</li>
+<li>  <strong>Specific Product Types:</strong></li>
+<li>  <strong>Sulfate-free shampoos:</strong> Gently cleanse without stripping natural oils.</li>
+<li>  <strong>Moisturizing conditioners:</strong> Replenish moisture and prevent breakage.</li>
+<li>  <strong>Leave-in conditioners:</strong> Provide extra hydration and help define waves.</li>
+<li>  <strong>Curl creams or gels:</strong> Enhance wave definition and control frizz.</li>
+<li>  <strong>Hair oils or serums:</strong> Add shine and protect from damage.</li>
+<li>  <strong>Heat protectant sprays:</strong> Protect hair from heat damage during styling.</li>
+<li>  <strong>Key Ingredients to Look For:</strong></li>
+<li>  <strong>Humectants:</strong> Glycerin, honey, aloe vera (attract moisture from the air)</li>
+<li>  <strong>Emollients:</strong> Shea butter, coconut oil, argan oil (smooth and soften the hair)</li>
+<li>  <strong>Proteins:</strong> Keratin, silk amino acids (strengthen and repair damaged hair)</li>
+<li>  <strong>Panthenol (Vitamin B5):</strong> Hydrates and adds shine</li>
+<li>  <strong>Ingredients to Avoid:</strong></li>
+<li>  <strong>Sulfates:</strong> Harsh cleansers that can strip the hair of its natural oils</li>
+<li>  <strong>Silicones:</strong> Can create buildup and weigh down the hair</li>
+<li>  <strong>Alcohol:</strong> Can dry out the hair</li>
+<li>  <strong>Parabens:</strong> Potential endocrine disruptors</li>
+<li>  <strong>Phthalates:</strong> Potential endocrine disruptors</li>
 </ul>
-<p><strong>PRIORITY 2: Enhancing Hair's Natural Wave/Curl Pattern</strong></p>
-<ul>
-<li>  <strong>Daily Care Routine:</strong></li>
-<li>  <strong>Scrunching:</strong> After applying conditioner or styling products to wet hair, gently scrunch the hair upwards to encourage wave formation.</li>
-<li>  <strong>Plopping:</strong> After washing, use a cotton t-shirt or microfiber towel to "plop" the hair. This helps to reduce frizz and enhance the natural wave/curl pattern.</li>
-</ul>
-<ul>
-<li>  <strong>Weekly Treatments:</strong></li>
-<li>  <strong>Curl-Defining Mask:</strong> Use a curl-defining mask or treatment once a week to enhance and define waves or curls.</li>
-</ul>
-<ul>
-<li>  <strong>Lifestyle Adjustments:</strong></li>
-<li>  <strong>Air Drying or Diffusing:</strong> Minimize heat styling by allowing hair to air dry or using a diffuser on a low heat setting.</li>
-</ul>
-<ul>
-<li>  <strong>Product Recommendations (for Wave/Curl Definition):</strong></li>
-<li>  <strong>Leave-in Conditioner:</strong>  Kinky-Curly Knot Today Leave-in Conditioner/Detangler</li>
-<li>  <strong>Curl Cream/Gel:</strong>  DevaCurl Styling Cream or Ouidad Curl Quencher Moisturizing Styling Gel</li>
-</ul>
-<ul>
-<li>  <strong>Timeline for Expected Improvements:</strong></li>
-<li>  Improved wave/curl definition can be noticeable within 1-2 weeks of consistently using curl-enhancing techniques and products.</li>
-</ul>
-<p><strong>PRIORITY 3: Maintaining Hair Health and Preventing Damage</strong></p>
-<ul>
-<li>  <strong>Daily Care Routine:</strong></li>
-<li>  <strong>Heat Protection:</strong> Always use a heat protectant spray before using any heat styling tools (blow dryer, straightener, curling iron).</li>
-<li>  <strong>Silk or Satin Pillowcase:</strong> Sleeping on a silk or satin pillowcase can reduce friction and breakage.</li>
-</ul>
-<ul>
-<li>  <strong>Weekly Treatments:</strong></li>
-<li>  <strong>Protein Treatment:</strong> Use a protein treatment every 4-6 weeks to help strengthen the hair shaft and prevent breakage. Be cautious not to overuse protein, as it can make hair brittle if overdone.</li>
-</ul>
-<ul>
-<li>  <strong>Lifestyle Adjustments:</strong></li>
-<li>  <strong>Trim Regularly:</strong> Get hair trimmed every 6-8 weeks to remove split ends and prevent them from traveling up the hair shaft.</li>
-<li>  <strong>Avoid Overprocessing:</strong> Limit chemical treatments like coloring, perming, or relaxing, as these can cause significant damage.</li>
-</ul>
-<ul>
-<li>  <strong>Product Recommendations (for Damage Prevention):</strong></li>
-<li>  <strong>Heat Protectant:</strong>  Moroccanoil Perfect Defense or Redken Extreme Play Safe Heat Protectant</li>
-<li>  <strong>Protein Treatment:</strong>  Aphogee Two-Step Protein Treatment</li>
-</ul>
-<ul>
-<li>  <strong>Timeline for Expected Improvements:</strong></li>
-<li>  Reduced breakage and stronger hair can be noticeable within 4-8 weeks of consistently following damage prevention practices.</li>
-</ul>
-<p><strong>PRIORITY 4: Addressing Scalp Condition (Needs Further Evaluation)</strong></p>
-<ul>
-<li>  <strong>Ideal Image Angles:</strong> Given the limited scalp visibility in the provided images, obtaining close-up images of the scalp, ideally with the hair slightly parted, is crucial.</li>
-<li>  <strong>Scalp Close-up:</strong> Focus on the crown, hairline, and any areas of concern.</li>
-<li>  <strong>Parted Hair:</strong> Gently part the hair in several areas to reveal the scalp.</li>
-</ul>
-<ul>
-<li>  <strong>Possible Scalp Conditions:</strong> Based on the additional information provided, consider these conditions when evaluating scalp images:</li>
-<li>  <strong>Dry Scalp:</strong> Look for dryness, flakiness, and possible redness.</li>
-<li>  <strong>Oily Scalp:</strong> Assess for excessive oiliness, which may lead to clogged follicles.</li>
-<li>  <strong>Irritation or Redness:</strong> Note any signs of inflammation or irritation.</li>
-</ul>
-<ul>
-<li>  <strong>Recommendations (Once Scalp Condition is Determined):</strong></li>
-<li>  <strong>Dry Scalp:</strong> Use a moisturizing shampoo and conditioner, and consider a scalp oil or serum.</li>
-<li>  <strong>Oily Scalp:</strong> Use a clarifying shampoo and avoid heavy conditioners or styling products near the scalp.</li>
-<li>  <strong>Irritated Scalp:</strong> Use a gentle, fragrance-free shampoo and avoid harsh chemicals or styling products.</li>
-</ul>
-<p>By following these recommendations and focusing on the identified priorities, you can significantly improve the health, appearance, and manageability of your hair. If you have any specific concerns or conditions, consulting with a dermatologist or trichologist is always advisable.</p>
-        </div>
-
-        <footer style="text-align: center; margin-top: 50px; font-size: 0.9em; color: #777;">
-            Generated by the Professional Hair Analysis System
-        </footer>
-    </body>
-    </html>
-    
+<p>This comprehensive treatment plan should help the patient maintain healthy, beautiful, and well-defined wavy hair. Remember to personalize the plan based on individual needs and preferences, and to consult with a hair care professional for specific recommendations.</p>
+                </div>
+                
+                <div class="signature-area">
+                    <div class="signature-line">
+                        Srivasan
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    <p>This report was generated by the Professional Hair Analysis System. Confidential - For medical use only.</p>
+                    <p>© 2025 Kavery. All rights reserved.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        
