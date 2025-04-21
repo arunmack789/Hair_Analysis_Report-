@@ -5,5 +5,8 @@ this project about analyasis of hair  using Generative Ai
 #Tools
 Langchain,Tkinter for Local Deployment
 
+![WEB VERSION DEMO](https://github.com/arunmack789/Hair_Analysis_Report-/blob/e4a14f1d94021d9eb20dbb964b71fd598c80646e/sp2.PNG)
+
+
 
 
